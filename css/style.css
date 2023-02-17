@@ -80,6 +80,10 @@ label {
   padding: 0.75em 1.75em;
 }
 
+.active-btn:focus,
+.active-btn:hover {
+  background-color: #1313ab;
+}
 .toggle {
   --width: 50px;
   --height: calc(var(--width) / 2);
@@ -93,8 +97,8 @@ label {
   cursor: pointer;
 }
 
-.toggle input {
-  display: none;
+.toggle input,
+.visually-hidden {
 }
 
 .toggle .slider {

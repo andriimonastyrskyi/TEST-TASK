@@ -1,11 +1,9 @@
 const form = document.querySelector(".hero");
 const send = document.querySelector("#send");
-const btn1 = document.querySelector("#btn1");
+const btn = document.querySelector("#btn");
 
 const totalInput = form.elements;
-// console.log([...totalInput]);
 
-// const active = [...totalInput].map((el) => el.check);
 form.addEventListener("click", checkInput);
 
 function checkInput(e) {
@@ -22,12 +20,11 @@ function checkInput(e) {
   console.log(active);
 }
 
-form.addEventListener("checked", submitPoll);
-function submitPoll() {
-  document.getElementById("btn1").disabled = true;
+btn.addEventListener("click", submitPoll);
+
+function submitPoll(e) {
+  btn.disabled = true;
   setTimeout(function () {
-    document.getElementById("btn1").disabled = false;
+    btn.disabled = false;
   }, 1000);
 }
-
-document.getElementById("btn1").addEventListener("click", submitPoll);
