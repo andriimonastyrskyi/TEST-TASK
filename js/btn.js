@@ -1,6 +1,5 @@
 const form = document.querySelector(".hero");
 const send = document.querySelector("#send");
-const btn = document.querySelector("#btn");
 
 const totalInput = form.elements;
 
@@ -18,13 +17,4 @@ function checkInput(e) {
   }
 
   console.log(active);
-}
-
-btn.addEventListener("click", submitPoll);
-
-function submitPoll(e) {
-  btn.disabled = true;
-  setTimeout(function () {
-    btn.disabled = false;
-  }, 1000);
 }
