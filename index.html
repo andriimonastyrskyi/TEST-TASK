@@ -16,21 +16,21 @@
   </head>
   <body>
 <div class="container">
-    <section class="hero">
-    <ul class="hero-item">
+    <form class="hero">
+      <ul class="hero-item">
         <li class="hero-title">
-        <div class="hero-list">
+          <div class="hero-list">
             <p>Lorem ipsum dolor sit...</p>
 
             <label class="toggle">
             <input
                 type="checkbox"
-                id="disable-btn"
-                onchange="document.getElementById('submit').disabled = !this.checked;"
+                id="btn1"
+                
             />
             <span class="slider"></span>
             </label>
-        </div>
+          </div>
         </li>
         <li class="hero-title">
         <div class="hero-list">
@@ -40,8 +40,7 @@
             <input
                 type="checkbox"
                 id="btn1"
-                onclick="disableBtns()"
-                onchange="document.getElementById('submit').disabled = !this.checked;"
+                                
             />
             <span class="slider"></span>
             </label>
@@ -55,15 +54,14 @@
             <label class="toggle">
             <input
                 type="checkbox"
-                id=""
-                onchange="document.getElementById('submit').disabled = !this.checked;"
-            />
+                id="btn1"
+             />
             <span class="slider"></span>
             </label>
         </div>
         </li>
     </ul>
-    </section>
+</form>
 
     </div>
 
@@ -74,6 +72,6 @@
     </div>
 </div>
 
-    <script src=".js/btn.js"></script>
+    <script type="module" src="./js/btn.js"></script>
   </body>
 </html>
